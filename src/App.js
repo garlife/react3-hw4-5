@@ -18,7 +18,7 @@ function Car(props) {
           />
         </div>
         <h3>{props.car.mark} {props.car.model}</h3>
-        <p>{props.car.price}&#8381;</p>
+        <p>{props.car.price} &#8381;</p>
       </div>
     </div>
   );

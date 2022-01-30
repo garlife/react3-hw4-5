@@ -3,7 +3,8 @@ h1, p {
 }
 
 .card.marked{
-  border: 2px solid crimson
+  border: 2px solid crimson;
+  padding: 10px
 }
 
 img {
