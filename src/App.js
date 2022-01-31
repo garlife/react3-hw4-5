@@ -56,10 +56,12 @@ export default class App extends React.Component {
 
   handleMarked(model) {
     console.log(model);
-    const cars = this.state.cars.concat();
-    const car = cars.find((c) => c.model === model);
-    car.marked = !car.marked;
-    this.setState({ cars: cars });
+    const cars = this.state.cars.concat();//создает копию массива cars, чтобы не мутировать исходный массив
+    const car = cars.find((cars) => cars.model === model);//извлекает выбранную модель из массива
+    console.log("marked: " + car.marked);
+    car.marked = !car.marked;//присваевает обратное значение для найденной модели
+    console.log("найденная модель: " + model + ", marked: " + car.marked);
+    this.setState({ cars: cars });//обновляет массив в стэйте
   }
 
   renderCars() {
